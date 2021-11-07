@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+header{
+    background: #000;
+    width: 100%;
+    height: 120px;
+}
+
+.barraDeNavegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+}
+.barraDeNavegacion div {
+    padding: 10px;
+    background: #999;
+    width: 70px;
+    
+}
+.slider{
+    background: #e5e5e5;
+    width: 90%;
+    margin: 10px auto;
+    height: 400px;
+    
+}
+
+.colecciones{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+}
+.colecciones-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.coleccion-item{
+    background: #e5e5e5;
+    width: 90%;
+    margin: 0 auto;
+    height: 350px;
+    border-radius: 8px;
+}
+
+.ofertas{    
+    width: 90%;    
+    height: 960px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+}
+.primer-oferta{
+    width: 100%;
+    height: 450px;
+    background: rgb(59, 185, 137);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.imagen-oferta{
+    width: 100%;
+    height: 450px;
+    background: rgb(165, 68, 160);
+    border-radius: 8px;
+}
+
+.segunda-oferta{
+    width: 100%;
+    height: 450px;
+    background: rgb(165, 68, 160);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.imagen-oferta2{
+    width: 100%;
+    height: 450px;
+    background: rgb(59, 185, 137);
+    border-radius: 8px;
+}
+
+
+
+.categoria{    
+    width: 90%;
+    height: 740px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.categoria-container{    
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.categoria-item{
+    background: #e5e5e5;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+footer{
+    background: #000;
+    width: 100%;
+    height: 350px;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .categoria-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .colecciones-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .primer-oferta{
+        grid-template-columns: 1fr;
+    }
+
+    .segunda-oferta{
+        grid-template-columns: 1fr;
+    }
+
+
+
+}
+
+.acerca-container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 10px auto;
+    background: #999;
+}
+.acerca-container .informacion h3{
+    text-align: center;
+    padding: 20px;
+}
+.acerca-container .informacion{
+    background: #ccc;
+    width: 100%;
+    height: 450px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+/*Formulario de contacto*/
+.contacto-container{
+    border: 0;
+    outline: 0;
+    width: 90%;
+    height: 450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto-container .elementos-personales{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.contacto-container .elementos-personales input{
+    width: 90%;    
+    height: 40px;
+    border-radius: 4px;
+    margin: 25px auto;
+    background: linear-gradient(#ccc, #c9c9c9);
+    border: 0;
+    outline: 0;
+}
+.contacto-container .elementos-personales input::placeholder{
+    padding:10px;
+    font-size: 1.2em;
+}
+
+.contacto-container .elementos-mensaje{
+    border:0;
+    outline: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    margin: 0 auto;
+}
+
+.contacto-container .elementos-mensaje textarea{
+    margin: 10px;
+    font-size:1.2em;
+    height: 360px;
+    background: #ccc;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+}
+
+.btn{
+    width: 90%;
+    height: 40px;
+    background: #ccc;
+    border: 0;
+    outline: 0;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;    
+    transition: ease-in-out .8s;
+}
+
+.btn:hover{
+    background: rgb(158, 151, 151);
+}
+
+
+@media (max-width:568px){
+    .categoria-container{
+        grid-template-columns: 1fr;
+    }
+    .colecciones-container{
+        grid-template-columns: 1fr;
+    }
+    .primer-oferta{
+        grid-template-columns: 1fr;
+    }
+
+    .segunda-oferta{
+        grid-template-columns: 1fr;
+    }
+
+}
