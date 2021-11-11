@@ -12,7 +12,7 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,200&family=Volkhov:ital,wght@1,700&display=swap" rel="stylesheet">
-
+ 
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
@@ -28,11 +28,12 @@
 
         <nav id="menu">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Colecciones</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#colecciones">Colecciones</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <div class="menu-toggle">
@@ -43,7 +44,7 @@
     <!--Slider-->
 
     <!-- Slideshow container -->
-<div class="slideshow-container">
+<div id="inicio" class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
@@ -79,17 +80,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
     <!--Tarjetas de oferta-->
-    <section class="colecciones">
+    <section  id="colecciones" class="colecciones">
         <h2>Colecciones</h2>
        <div class="colecciones-container">
             <div class="coleccion-item">
@@ -135,7 +127,9 @@
        </div>
     </section>
 
-    <section class="ofertas">
+    <!--Ofertas-->
+
+    <section id="ofertas" class="ofertas">
         <h2>¡Oferta!</h2>
         <div class="primer-oferta">
             <div class="texto-oferta">
@@ -147,35 +141,9 @@
         </div>
     </section>
 
-
-
-
-
-
-    <!-- <section class="ofertas">
-        <h2>Ofertas</h2>
-        <div class="primer-oferta">
-            <div class="oferta-item">
-                <h3>Oferta 2 x 25 $</h3>
-                <p>Elige ahora los  bolsos que quieras, oferta temporal</p>
-                <button class="btn"> Ver</button>
-            </div>
-           <div class="imagen-oferta">
-                <img src="../images/ofertaBolsos.jpg" alt="Oferta zapatos">
-           </div>
-        </div>
-        <!-- <div class="segunda-oferta">
-            <div class="imagen-oferta2">
-                <img src="../images/ofertaZapato.jpg" alt="Oferta zapatos">
-            </div>
-            <div class="oferta-item">
-
-            </div>
-            
-        </div> -->
     </section> -->
     <!--Aqui va lagaleria de las categorías-->
-    <section class="categoria">
+    <section id="categorias" class="categoria">
         <h2>Categorías</h2>
         <div class="categoria-container">            
             <div class="categoria-item">
@@ -188,7 +156,7 @@
             </div>
             <div class="categoria-item">
                 <img src="../images/blusa.png" alt="Blusa">
-                <a href="#">Blusas</a>
+                <a href="#">Blusa</a>
             </div>
             <div class="categoria-item">
                 <img src="../images/cosmetics.png" alt="Cosméticos">
@@ -217,49 +185,55 @@
         </div>
     </section>
 
-    <section class="acerca-de">
-        <h2>Acerca de </h2>
+    <section id="acerca" class="acerca-de">
+        
 
         <div class="acerca-container">
             <div class="informacion">
                 <h3>Acerca de BohoGirl</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ex nesciunt, cum voluptates sequi molestiae ea ipsa. Eligendi voluptatum temporibus, non sit eaque dolorem in, porro excepturi iste dicta dignissimos.
-                    Error nostrum, ut fugit sed voluptates eius commodi soluta porro dolor natus similique minus, iste, harum odit itaque enim ipsum deleniti temporibus quisquam. Facere vel consectetur dolores error doloribus consequuntur.
-                    Possimus fugit non ducimus tempora necessitatibus autem repellat, iusto id saepe, nihil molestiae soluta vitae reprehenderit architecto? Et minima dignissimos adipisci voluptatem voluptas culpa consequatur? Cum quaerat consequatur nulla quo.
-                    Dolor eligendi, facere non sunt iste illo aut ipsam excepturi dicta esse quisquam vero distinctio modi consectetur nesciunt. Nostrum facilis natus voluptates tempora ullam vitae molestiae sunt eos debitis distinctio.
-                    Ipsum tempore, debitis, molestias ex quam placeat id ut voluptates delectus et inventore dolor, suscipit dolore labore perspiciatis? Dolores iusto soluta at quis in pariatur illum sapiente, saepe id doloribus?
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel provident ex eos amet quis quidem adipisci a quibusdam repellendus recPanamándae, corrupti incidunt vitae, consequuntur pariatur. Quisquam, non totam! Quod, sequi!                
                 </p>                
+
+                <button class="btn"><i class="fas fa-phone"></i>  Contáctanos</button>
+
             </div>
             <div class="imagen">
-
+                <img src="../images/tiendaRopa.jpg" alt="Tienda de ropa">
             </div>
         </div>
     </section>
 
     <!--  SECCIÓN DE CONTACTO   -->
 
-    <section class="contacto">
-        <h2>Contacto</h2>
+   
+    <div id="contacto" class="container-contacto">
+        <img src="../images/contactanos.png" alt="Contáctanos">
+        <form action="">
+            <h2>Contáctanos</h2>
+          <label for="primerNombre">Primer Nombre</label>
+          <input type="text" id="primerNombre" name="firstname" placeholder="Su nombre..">
+      
+          
+          
+          <label for="numero">Número</label>
+          <input type="tel" placeholder="Número de telefono">
+          
+            <label for="email">Email</label>
+            <input type="email" name="" placeholder="Email" id="">
 
-        <form action="" class="contacto-container">
-            <div class="elementos-personales">
-                <label for="">Nombre</label>
-                <input type="text" placeholder="Ingresa tu nombre:">
-                <label for="">Apellido</label>
-                <input type="text" placeholder="Ingresa tu apellido">
-                <label for="">Teléfono</label>
-                <input type="tel" placeholder="Ingresa tu teléfono">
-                <label for="">Email</label>
-                <input type="email" name="" placeholder="Ingresa tu email" id="">                
-            </div>
-            <div class="elementos-mensaje">
-                <textarea name=""  placeholder="Escribe tu mensaje aquí" id="" cols="30" rows="10"></textarea>
-                <button class="btn">Enviar</button>
-            </div>
+         
+      
+          <label for="Mensaje">Mensaje</label>
+          <textarea id="Mensaje" name="Mensaje" placeholder="Mensaje..." style="height:160px"></textarea>
+      
+          <input type="submit" value="Enviar">
+      
         </form>
+        
+      </div>
 
-    </section>
+
 
     <footer class="footer"> 
         <div class="container">
@@ -267,10 +241,12 @@
                 <div class="footer-col">
                     <h4>BohoGirl</h4>
                     <ul>
-                        <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="#">Politicas privacidad</a></li>
-                        <li><a href="#">Otros servicios</a></li>
-                        <li><a href="#">Compra ya</a></li>                       
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#colecciones">Colecciones</a></li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="#categorias">Categorías</a></li>                       
+                        <li><a href="#acerca">Acerca de</a></li>                       
+                        <li><a href="#contacto">Contacto</a></li>                       
                     </ul>
                 </div>
  
@@ -304,7 +280,7 @@
                      <a href="#"><i class="fab fa-facebook-f"></i></a>
                      <a href="#"><i class="fab fa-twitter"></i></a>
                      <a href="#"><i class="fab fa-instagram"></i></a>
-                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-whatsapp"></i></a>
                  </div>
              </div>
             </div>
@@ -312,6 +288,9 @@
      </footer>
 
     <script src="../javascript/script.js"></script>
+     <!--Scroll reveall-->
+     <script src="https://unpkg.com/scrollreveal"></script>
+     <script src="../javascript/scroll-reveal.js"></script>
 
 </body>
 
