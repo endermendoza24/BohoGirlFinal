@@ -11,6 +11,12 @@ body{
     font-family: 'Sarabun', sans-serif;
     
 }
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Volkhov', sans-serif;
+}
 
 header{
     background: #24262b;    
@@ -84,6 +90,7 @@ header{
   }
   .slideshow-container img{
     border-radius: 8px;
+    height: 450px;
   }
   
   /* Hide the images by default */
