@@ -22,7 +22,7 @@ header{
     background: #24262b;    
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 90px;
     display:flex;
     padding: 0 20px;
     z-index: 20;
@@ -35,7 +35,7 @@ header{
     display: none;
     margin-left: auto;
     color: #fff;
-    line-height: 80px;
+    line-height: 90px;
     font-size: 25px;
     cursor: pointer;
 }
@@ -43,7 +43,7 @@ header{
     color: #fff;
     font-size: 25px;
     text-decoration: none;
-    line-height: 80px;
+    line-height: 90px;
     text-transform: uppercase;
     /* font-family: 'Mochiy Pop One', sans-serif; */
     font-family: 'Volkhov', serif;
@@ -60,7 +60,7 @@ header{
     display: inline-block;
     position: relative;
     color: #fff;
-    line-height: 80px;
+    line-height: 90px;
     padding: 0 8px;
     font-size: 20px;
     text-transform: uppercase;
@@ -75,7 +75,7 @@ header{
 }
 
 .show{
-    height: 305px !important;
+    height: 550px !important;
 
 }
 
@@ -562,7 +562,7 @@ footer{
         background: #24262b;
         position: absolute;
         text-align: center;
-        top:60px;
+        top:100px;
         left: 0;
         width: 100%;
         height: 0;
@@ -677,27 +677,41 @@ footer{
     .colecciones-container{
         grid-template-columns: 1fr;
     }
+    
     .primer-oferta{
         width: 100%;
         margin: 0 auto;
         grid-template-columns: 1fr;
         
     }
-    .primer-oferta .texto-oferta{
+    .primer-oferta .texto-oferta h3, .texto-oferta p{
         text-align: center;
     }
-
+    .primer-oferta .texto-oferta button{
+        
+        float: none;
+    }
     .primer-oferta img{
-        margin-top: 210px;
+        margin-top: 400px;
+    }
+    .primer-oferta img{
+        width: 100%;
+        height: 300px;
+        margin-top: 80px;
+        
     }
 
     .categoria{
-        margin: 450px auto;
+        margin: 190px auto;
+        
     }
 
     .categoria-container{
         
         grid-template-columns: repeat(2, 1fr);
+    }
+    .acerca-container{
+        margin-top: 470px;
     }
 
     .footer-col{
@@ -710,4 +724,35 @@ footer{
         display: none;
     }
 
+}
+
+@media (max-width:450px){
+    .categoria{
+        margin-top:300px ;
+    }
+    .categoria-container{
+        grid-template-columns: 1fr;
+    }
+    .ofertas{
+        
+        height: auto;
+    }
+    .primer-oferta{
+        width: 100%;
+        height: 300px;
+        margin: 20px 0;
+    }
+    .ofertas .texto-oferta  h3{
+        text-align: center;
+        font-size: 30px;
+    }   
+    .ofertas .texto-oferta button{
+        float: none;
+    }
+    .acerca-container{
+        margin-top:1440px;
+    } 
+    .container-contacto{
+        margin-top: 450px;
+    }
 }
