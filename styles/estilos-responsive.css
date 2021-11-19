@@ -1,0 +1,205 @@
+/*RESPONSIVE*/
+
+@media screen and (max-width:768px){
+    .menu-toggle{
+        display: block;
+    }
+
+    #menu{
+        background: #24262b;
+        position: absolute;
+        text-align: center;
+        top:100px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        
+        overflow: hidden;
+        transition: .3s ease-out;
+    }
+
+    #menu ul li{
+        display: block;
+    }
+
+    #menu ul li a{
+        color: #fff;
+        font-size: 20px;
+        border-bottom:1px solid rgb(116, 109, 109) ;
+        width: 100%;
+    }
+
+    #menu ul li a:hover{
+        background: #52545a;
+    }
+}
+
+
+@media (max-width:768px){
+    .slideshow-container{
+        display: none;
+    }
+    .categoria-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .colecciones-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .primer-oferta{
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        
+    }
+    .primer-oferta .texto-oferta{
+        text-align: center;
+    }
+
+    .primer-oferta img{
+        margin-top: 210px;
+    }
+    
+    .categoria{
+        margin-top: 420px;
+    }
+
+    .categoria-container{
+        
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .acerca-container{        
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 430px;    
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acerca-container .informacion h3, p{
+        padding: 30px;
+    }
+    .acerca-container .informacion .btn{
+        width: 100%;
+        
+        margin: 10px auto;
+    }
+
+    .acerca-container .informacion{
+        order: 2;
+    }
+    .acerca-container img{
+        width: 100%;
+        height: 430px;
+        margin: 10px;
+        order: 1;
+    }
+
+    .container-contacto{
+        margin-top: 400px;
+        grid-template-columns: 1fr;
+    }
+    .container-contacto label{
+        display: none;
+    }
+    .container-contacto input[type=submit]{
+        width: 100%;
+    }
+
+    .footer-col{
+        width: 50%;
+        padding: 15px;
+    }
+
+}
+
+@media (max-width:568px){
+    .slideshow-container{
+        display: none;
+    }
+    .categoria-container{
+        grid-template-columns: 1fr;
+    }
+    .colecciones-container{
+        grid-template-columns: 1fr;
+    }
+    
+    .primer-oferta{
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        
+    }
+    .primer-oferta .texto-oferta h3, .texto-oferta p{
+        text-align: center;
+    }
+    .primer-oferta .texto-oferta button{
+        
+        float: none;
+    }
+    .primer-oferta img{
+        margin-top: 400px;
+    }
+    .primer-oferta img{
+        width: 100%;
+        height: 300px;
+        margin-top: 80px;
+        
+    }
+
+    .categoria{
+        margin: 190px auto;
+        
+    }
+
+    .categoria-container{
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .acerca-container{
+        margin-top: 470px;
+    }
+
+    .footer-col{
+        width: 100%;
+        padding:  15px;
+        text-align: center;
+    }
+
+    .footer-col h4::before{
+        display: none;
+    }
+
+}
+
+@media (max-width:450px){
+    .categoria{
+        margin-top:300px ;
+    }
+    .categoria-container{
+        grid-template-columns: 1fr;
+    }
+    .ofertas{
+        
+        height: auto;
+    }
+    .primer-oferta{
+        width: 100%;
+        height: 300px;
+        margin: 20px 0;
+    }
+    .ofertas .texto-oferta  h3{
+        text-align: center;
+        font-size: 30px;
+    }   
+    .ofertas .texto-oferta button{
+        float: none;
+    }
+    .acerca-container{
+        margin-top:1440px;
+    } 
+    .container-contacto{
+        margin-top: 450px;
+    }
+}
