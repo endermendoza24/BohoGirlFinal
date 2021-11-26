@@ -1,3 +1,6 @@
+
+//  este archivo sirve para controlar el slider y el responsive de la barra de navegación
+
 let menuToggle = document.querySelector('.menu-toggle');
 let menuToggleIcon = document.querySelector('.menu-toggle i');
 let menu = document.getElementById('menu');
